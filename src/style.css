@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply w-full bg-black text-white overflow-hidden;
+    }
+}
+
+@layer components {
+    .btn-style {
+        @apply rounded-xl px-3 py-2 bg-zinc-800 cursor-pointer hover:bg-orange-500 transition-colors duration-300 font-semibold;
+    }
+
+    .text-area {
+        @apply w-full md:w-150 h-75 bg-zinc-900 rounded-xl outline-none border-2 border-white/20 p-3;
+    }
+
+    .message-slide {
+        @apply translate-x-[120%] opacity-0;
+    }
+}
